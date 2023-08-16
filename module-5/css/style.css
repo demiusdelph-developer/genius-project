@@ -1,3 +1,32 @@
-h1 {
-  border: 4px solid rosybrown;
+.color h1 {
+  color: red;
 }
+
+/* селектор тегу */
+/* h1 {
+  border: 4px solid rosybrown;
+} */
+
+/* селектор класу */
+/* .color {
+  color: white;
+} */
+
+/* селектор атрибуту */
+/* [color] {
+  color: white;
+} */
+
+/* селектор ідентифікатора id */
+/* #color {
+  color: white;
+} */
+
+/* універсальний селектор */
+/* *.color {
+  color: white;
+} */
+
+/* [class|=value] {
+  color: white;
+}; */
