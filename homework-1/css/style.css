@@ -1,0 +1,142 @@
+/* fonts */
+/* play */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'),
+       url('../fonts/play-v19-cyrillic_latin-regular.woff') format('woff'),
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'),
+       url('../fonts/play-v19-cyrillic_latin-700.woff') format('woff')
+}
+/* roboto */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'),
+       url('../fonts/roboto-v30-cyrillic_latin-regular.woff') format('woff')
+}
+
+:root {
+  /* colors */
+  --color-primary-light: #FFFFFF;
+  --color-primary-blue-light: #2B7FFF;
+  --color-primary-blue-dark: #011C44;
+  --color-secondary-grey-dark: #4A4A4A;
+  --color-secondary-grey-light: #747272;
+  --color-secondary-blue: #011F4A;
+  --color-secondary-yellow: #FFD02B;
+}
+
+/* base */
+body {
+  font-family: 'Roboto', 'Play', sans-serif;
+  color: var(--color-primary-blue-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.accent {
+  color: var(--color-primary-blue-light);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.button {
+  background-color: var(--color-primary-blue-light);
+  color: var(--color-primary-light);
+  border-radius: 32px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-blue-light);
+  color: var(--color-primary-blue-dark);
+}
+
+.section-title {
+  font-size: 64px;
+  line-height: 1.16;
+  font-family: 'Play';
+}
+
+address {
+  color: var(--color-primary-light);
+  font-style: normal;
+}
+
+/* header */
+
+.link {
+  color: var(--color-primary-blue-dark);
+  text-decoration: none;
+}
+
+.header-link {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-link:hover {
+  color: var(--color-primary-blue-light);
+}
+
+/* hero */
+
+.hero-title {
+  color: var(--color-primary-blue-light);
+  font-family: 'Play';
+  font-size: 114px;
+  line-height: 1.2;
+}
+
+/* about */
+.about p {
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+/* advantages */
+.advantages-item {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+/* footer */
+.footer-link {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.address-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.address-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-grey-light);
+}
