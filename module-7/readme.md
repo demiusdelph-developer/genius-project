@@ -1,4 +1,11 @@
 **Блокова модель**
 
 Кожен елемент на сторінці має прямокутну форму, у вебі при розмітці сторінки ми використовуємо теги і не залежно що в ньому знаходиться він є прямокутним і кожна така область називається блоком. Браузер залежно від нашого коду визначає розміщення та розміри блоку на сторінці.
-![block](https://github.com/demiusdelph-developer/genius-project/blob/modules/module-7/imgs/block.png)
+Згідно наступного зображення ми розглянемо блок його складову та як можна керувати розташуванням:&lt;br&gt;<br>
+
+![block](https://github.com/demiusdelph-developer/genius-project/blob/modules/module-7/imgs/block.png)&lt;br&gt;<br>
+
+- content
+- padding
+- border
+- margin
