@@ -1,0 +1,165 @@
+body {
+  background-color: #23272e;
+  color: #fff;
+}
+
+.container {
+  padding: 0 45px;
+  margin: 0 auto;
+}
+
+.example {
+  background-color: #282c34;
+  padding: 1em;
+}
+
+.example-item {
+  /* background: #1a1e27; */
+  background: #ff6347;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr {
+  margin-right: 20px;
+}
+
+/* margin-bottom */
+.mb {
+  margin-bottom: 20px;
+}
+
+/* фіксована ширина висота для блоку якщо треба */
+.example-item-bl {
+  width: 100px;
+  height: 100px;
+}
+
+/* тільки ширина */
+.example-item-width {
+  width: 100px;
+}
+
+/* флекс для елемента батьківського */
+.example-fl {
+  display: flex;
+}
+
+/* фон для всього блоку */
+.bg {
+  background-color: #11192b;
+  padding: 1em;
+}
+
+/* flex-direction */
+.fdr {
+  display: flex;
+  flex-direction: row;
+}
+
+/* flex-direction column */
+.fdc {
+  display: flex;
+  flex-direction: column;
+}
+
+.invested {
+  background-color: #11192b;
+}
+
+/* justify-content flex-start */
+.jcfs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+/*  justify-content center */
+.jcc {
+  display: flex;
+  justify-content: center;
+}
+
+/*  justify-content flex-end */
+.jcfe {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*  justify-content space-between */
+.jcsb {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  justify-content space-around */
+.jcsa {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*  justify-content space-evently */
+.jcse {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Висота для демонстрації блоку align-items */
+.ai {
+  height: 200px;
+}
+
+/* align-items stretch */
+.ais {
+  display: flex;
+  align-items: stretch;
+}
+
+/* align-items flex start */
+.aifs {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* align-items center */
+.aic {
+  display: flex;
+  align-items: center;
+}
+
+/* align-items flex-end */
+.aife {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* align-items baseline */
+.aibl {
+  display: flex;
+  align-items: baseline;
+}
+
+/* ширина для відображення flex-wrap */
+.fw-bl {
+  width: 25%;
+  height: 100px;
+}
+
+/* flex-wrap wrap */
+.fww {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* flex-wrap nowrap */
+.fwnw {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* flex-wrap wrap-reverse */
+.fwr {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}

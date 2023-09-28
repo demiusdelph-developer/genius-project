@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="container">
+    Розглянемо наглядно для розуміння, з описом
+    <div class="db">
+      <h3>display: block</h3>
+      <pre><code class="language-css">
+.example {
+  display: block;
+}
+      </code></pre>
+      <div class="example example-bl bg">
+        <div class="example-item example-item-bl mb">1</div>
+        <div class="example-item example-item-bl">2</div>
+      </div>
+    </div>
+    <div class="df">
+      <h3>display: flex</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example example-fl bg">
+        <div class="example-item example-item-bl mr">1</div>
+        <div class="example-item example-item-bl mr">2</div>
+        <div class="example-item example-item-bl mr">3</div>
+        <div class="example-item example-item-bl mr">4</div>
+        <div class="example-item example-item-bl mr">5</div>
+        <div class="example-item example-item-bl mr">6</div>
+        <div class="example-item example-item-bl mr">7</div>
+        <div class="example-item example-item-bl mr">8</div>
+        <div class="example-item example-item-bl mr">9</div>
+        <div class="example-item example-item-bl">10</div>
+      </div>
+      <p>Ми бачимо flex контейнер з елементами у яких задано фіксовану висоту та ширину, але оскільки вони не влазять браузер автоматично зжимає кожен елемент щоб елементи всі вмістились</p>
+    </div>
+    <div class="df">
+      <h3>flex-direction</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example">
+        <p>flex-direction: row - ставить елементи горизонтально в flex контейнері</p>
+        <div class="fdr bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl ">2</div>
+        </div>
+        <p>flex-direction: column - ставить елементи вертикально в flex контейнері</p>
+        <div class="fdc bg">
+          <div class="example-item example-item-bl mb">1</div>
+          <div class="example-item example-item-bl">2</div>
+        </div>
+      </div>
+      <p>Ми бачимо flex контейнер з елементами у яких задано фіксовану висоту та ширину, але оскільки вони не влазять браузер автоматично зжимає кожен елемент щоб елементи всі вмістились</p>
+    </div>
+    <div class="df">
+      <h3>justify-content - вирівнює елементи горизонтально нижче розглянемо основні варіанти які використовуються на практиці</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example">
+        <p>justify-content: flex-start - відображає елементи на початку рядка</p>
+        <div class="jcfs bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: center - відображає елементи по центру рядка</p>
+        <div class="jcc bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: flex-end - відображає елементи вкінці рядка</p>
+        <div class="jcfe bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: space-between - вирівнює елементи таким чином щоб між ними була однакова відстань, перший і останній не мають відступа від початку та кінця блоку по боках а між самими елементами є однакові відступи</p>
+        <div class="jcsb bg">
+          <div class="example-item example-item-bl">1</div>
+          <div class="example-item example-item-bl">2</div>
+          <div class="example-item example-item-bl">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: space-around - вирівнює елементи таким чином щоб між ними була однакова відстань, перший і останній мають відступи в 2 рази меньші ніж між самими елементами</p>
+        <div class="jcsa bg">
+          <div class="example-item example-item-bl">1</div>
+          <div class="example-item example-item-bl">2</div>
+          <div class="example-item example-item-bl">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: space-eventyly - вирівнює елементи таким чином щоб між ними була однакова відстань і такі самі відступи на початку блоку та в кінці</p>
+        <div class="jcse bg">
+          <div class="example-item example-item-bl">1</div>
+          <div class="example-item example-item-bl">2</div>
+          <div class="example-item example-item-bl">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>justify-content: stretch - відображає елементи стандартно розподіляючи контент рівномірно по ширині рядку, якщо у нас задана ширина ми цього результату не побачимо</p>
+      </div>
+    </div>
+    <div class="df">
+      <h3>align-items - теж вирівнює елементи але вертикально</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example">
+        <p>align-items: stretch - розтягує елементи зверху до низу по всій висоті (якщо висота буде фіксована властивість не працюватиме)</p>
+        <div class="ais ai bg">
+          <div class="example-item example-item-width mr">1</div>
+          <div class="example-item example-item-width mr">2</div>
+          <div class="example-item example-item-width mr">3</div>
+          <div class="example-item example-item-width">4</div>
+        </div>
+        <p>align-items: flex-start - відображає елементи по центру рядка</p>
+        <div class="aifs ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: center - відображає елементи по центру рядка</p>
+        <div class="aic ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: flex-end - вирівнює елементи по нижній частині блоку тобто притискає елементи до низу</p>
+        <div class="aife ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: baseline - вирівнює елементи по основній осі спочатку рядка</p>
+        <div class="aibl ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="df">
+      <h3>align-content - теж вирівнює елементи вертикально при цьому створює відстань між елементами працює дуже схоже до justify-content, розглянемо основні властивості</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example">
+        <p>align-items: stretch - розтягує елементи зверху до низу по всій висоті (якщо висота буде фіксована властивість не працюватиме)</p>
+        <div class="ais ai bg">
+          <div class="example-item example-item-width mr">1</div>
+          <div class="example-item example-item-width mr">2</div>
+          <div class="example-item example-item-width mr">3</div>
+          <div class="example-item example-item-width">4</div>
+        </div>
+        <p>align-items: flex-start - відображає елементи по центру рядка</p>
+        <div class="aifs ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: center - відображає елементи по центру рядка</p>
+        <div class="aic ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: flex-end - вирівнює елементи по нижній частині блоку тобто притискає елементи до низу</p>
+        <div class="aife ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+        <p>align-items: baseline - вирівнює елементи по основній осі спочатку рядка</p>
+        <div class="aibl ai bg">
+          <div class="example-item example-item-bl mr">1</div>
+          <div class="example-item example-item-bl mr">2</div>
+          <div class="example-item example-item-bl mr">3</div>
+          <div class="example-item example-item-bl">4</div>
+        </div>
+      </div>
+    </div>
+    <div class="df">
+      <h3>flex-wrap - керує можливістю переносити елементи на наступний рядок якщо їм не вистачає місця</h3>
+      <pre><code class="language-css">
+.example {
+  display: flex;
+}
+      </code></pre>
+      <div class="example">
+        <p>wrap - властивість яка каже про те що елементи можуть бути перенесені</p>
+        <div class="fww bg">
+          <div class="example-item mr fw-bl mb">1</div>
+          <div class="example-item mr fw-bl mb">2</div>
+          <div class="example-item mr fw-bl mb">3</div>
+          <div class="example-item mr fw-bl mb">4</div>
+          <div class="example-item mr fw-bl">5</div>
+        </div>
+        <p>nowrap - властивість яка каже про те що елементи не можуть бути перенесені при цьому не залежно від заданої ширини вони саостійно зменьшуються щоб влізати в рядок</p>
+        <div class="fwnw ai bg">
+          <div class="example-item mr fw-bl mb">1</div>
+          <div class="example-item mr fw-bl mb">2</div>
+          <div class="example-item mr fw-bl mb">3</div>
+          <div class="example-item mr fw-bl mb">4</div>
+          <div class="example-item mr fw-bl">5</div>
+        </div>
+        <p>wrap-reverse: елементи можуть бути перенесені при цьому рядки відображаються в зворотньому напрямку тобто якщо їх 2 то спочатку 2 потім перший, якщо їх 3 то спочатку 3 потім 2 потім 1</p>
+        <div class="fwr ai bg">
+          <div class="example-item mr fw-bl mb">1</div>
+          <div class="example-item mr fw-bl mb">2</div>
+          <div class="example-item mr fw-bl mb">3</div>
+          <div class="example-item mr fw-bl mb">4</div>
+          <div class="example-item mr fw-bl mb">5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
