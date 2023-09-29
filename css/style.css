@@ -29,7 +29,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .container {
@@ -166,10 +166,21 @@ ul {
 
 .tradition-container {
   display: flex;
+  gap: 40px;
+  justify-content: space-between;
 }
 
 .traditions-title {
   margin-bottom: 42px;
+  max-width: 710px;
+}
+
+.tradition-content {
+  max-width: 710px;
+}
+
+.tradition-content p.limited-width {
+  max-width: 335px;
 }
 
 /* chef section */
@@ -186,6 +197,21 @@ ul {
 /* formats section */
 .formats-title {
   margin-bottom: 80px;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+
+.format-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border: 2px solid #222;
+  border-radius: 16px;
 }
 
 .format-title {
