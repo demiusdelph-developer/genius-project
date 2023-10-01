@@ -65,10 +65,11 @@
     </section>
     <section class="section" id="chefs-section">
       <div class="container">
-        <h2 class="chefs-title section-title">Наші найкращі <span class="accent-dark">шеф -кухарі</span></h2>
+        <h2 class="chefs-title section-title centered">Наші найкращі <span class="accent-dark">шеф -кухарі</span></h2>
         <ul>
           <li>
             <article>
+              <img class="chef-photo" src="img/nastya-chef.jpg" alt="Настя шеф">
               <h3 class="chef-title">Настя</h3>
               <p>Привіт, я Настя!</p>
               <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -77,6 +78,7 @@
           </li>
           <li>
             <article>
+              <img class="chef-photo" src="img/vlad-chef.jpg" alt="Влад шеф">
               <h3 class="chef-title">Влад</h3>
               <p>Привіт, я Влад!</p>
               <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через нашу випічку!</p>
@@ -88,7 +90,12 @@
     </section>
     <section class="section" id="formats-section">
       <div class="container">
-        <h2 class="section-title">Формати</h2>
+        <h2 class="section-title centered">Формати</h2>
+        <button class="slider-arrow" type="button">
+          <svg class="slider-icon" width="16" height="16">
+            <use href="./img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
         <ul class="formats-list">
           <li class="format-item"">
             <article class="format-card">
@@ -133,7 +140,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="container">
       <nav>
         <a href="/">
@@ -151,8 +158,20 @@
           <li><a href="tel:+38(096)0000007" class="address-link">+ 38 (096) 000 00 07</a></li>
           <li><a href="mailto:shopbakery@gmail.com" class="address-link">shopbakery@gmail.com</a></li>
           <li><a href="https://goo.gl/maps/xkhSwy9w4j6CDX9L8" class="address-link">Україна, м. Київ, вул. Січових Стрільців 54</a></li>
-          <li><a href="#"><!-- facebook --></a></li>
-          <li><a href="#"><!-- instagram --></a></li>
+          <li>
+            <a href="#">
+              <svg class="address-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="address-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </address>
       <a href="#" target="_blank" class="address-link">Політика конідеційності</a>
