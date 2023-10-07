@@ -98,6 +98,7 @@ ul {
 /* header */
 .header {
   background: #222;
+  margin: 0;
 }
 
 .header-container {
@@ -210,7 +211,7 @@ ul {
   content: '';
   display: block;
   width: 352px;
-  border: 2px solid var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
 }
 
 .chefs-list {
