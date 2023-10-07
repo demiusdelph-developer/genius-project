@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.h3-title {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.blue-relative {
+  position: relative;
+  z-index: 1;
+}
+
+.yellow {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-10 {
+  width: 10px;
+  height: 10px;
+}
+
+.block-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.block-50 {
+  width: 50px;
+  height: 50px;
+}
+
+.block-100 {
+  width: 100px;
+  height: 100px;
+}
+
+.block-150 {
+  width: 150px;
+  height: 150px;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 2;
+}
+
+.fixed-height {
+  height: 300px;
+  overflow: scroll;
+  position: relative;
+}
+
+.fixed-container {
+  position: absolute;
+}
+
+.sticky-height {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  left: 330px;
+}
